@@ -1,4 +1,6 @@
-import { format } from "sqlstring"
+import { default as sqlstring } from "sqlstring"
+
+const format = sqlstring.format
 
 const operators_negated = {
   $like(field, value) {
@@ -103,6 +105,7 @@ const operators = {
 }
 
 export function build(query, ops = operators) {
+  if(!query) return ''
   const sql = []
   const values = []
 
