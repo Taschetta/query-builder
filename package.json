@@ -1,8 +1,9 @@
 {
-  "name": "query-builder",
+  "name": "@tschtt/query-builder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "vitest"
   },
